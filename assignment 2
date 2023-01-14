@@ -1,0 +1,103 @@
+Program 1)
+
+# Program to do string operations
+# Defining String Input
+string = "Python is a case sensitive language"
+# Finding length of input string
+length = len(string)
+print("1)", str(length) + "\n")
+# Reversing order of string
+reverse_string = string[::-1]
+print("2)", reverse_string+"\n")
+# Using string slicing
+sliced_string = string[12:-9]
+print("3)", sliced_string+"\n")
+# Replacing substring
+print("4)", string[:12]+" object oriented "+string[-8:]+"\n")
+# Searching for substring
+print("5)",string.find("a"))
+# Removing all whitespaces
+print("\n6)",string.replace(" ","")+"\n")
+
+Program 2)
+
+# Program to display personal details
+# Creating variables for storing data
+name = "Pranav Sharma"
+sid = 22103018
+dept = "Computer Science Engineering"
+cgpa = 10
+# Printing output in the given format
+print(f"Hey, {name} here,\nMy SID is {sid},\nI am from {dept},\nMy CGPA is {cgpa}")
+
+
+Program 3)
+
+# Program to perform all binary operations
+# Defining all required variables
+a = 56
+b = 10
+# Printing results of all operations
+print("1) Binary A and B : ",a&b)
+print("2) Binary A or B : ",a|b)
+print("3) Binary A xor B : ",a^b)
+print("4) Binary A left shift 2 units : ",a<<2)
+print("5) Binary B left shift 2 units : ",b<<2)
+print("6) Binary A right shift 2 units : ",a>>2)
+print("7) Binary B right shift 4 units : ",b>>4)
+
+Program 4)
+
+# Program to find greatest number out of three
+# Getting input from the user
+num_1 = int(input("Please enter first number : "))
+num_2 = int(input("Please enter second number : "))
+num_3 = int(input("Please enter third number : "))
+# Comparing first two numbers
+if num_1>num_2:
+    # Comparing greater number one with last number
+    if num_1>num_3:
+        print(f"The greatest number is {num_1}")
+    else:
+        print(f"The greatest number is {num_3}")
+else:
+    # Comparing greater number two with last number
+    if num_2>num_3:
+        print(f"The greatest number is {num_2}")
+    else:
+        print(f"The greatest number is {num_3}")
+
+Program 5)
+
+# Program to check substring "name"
+# Taking inpur from the user
+string = input("Please enter a sentence : ")
+# Printing the label for the process
+print("Checking for \"name\" in your sentence.")
+# Checking for substring in input
+if "name" in string:
+    # When the string contains substring
+    print("Yes, substring name is present.")
+else:
+    # When the string does not contain substring
+    print("No, substring name is absent.")
+
+Program 6)
+
+# Program to determine existence of triangle with sides given
+# Taking user input for sides of triangle
+side_1 = int(input("Please enter length of first side : "))
+side_2 = int(input("Please enter length of second side : "))
+side_3 = int(input("Please enter length of third side : "))
+# Finding all possible permutations of two side sums
+s1_s2 = side_1 + side_2
+s2_s3 = side_2 + side_3
+s3_s1 = side_3 + side_1
+# Comparing sum of two sides with the third using if statement
+if s1_s2 <= side_3 or s2_s3 <= side_1 or s3_s1 <= side_2:
+    # The triangle cannot be formed
+    print("No, Given lengths don't form triangle.")
+else:
+    # The triangle can be formed
+    print("Yes, Given lengths form a triangle.")
+

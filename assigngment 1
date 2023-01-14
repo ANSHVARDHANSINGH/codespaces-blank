@@ -1,0 +1,60 @@
+
+Program 1)
+
+# Program to find the average of 3 numbers
+# Taking user input for numbers
+num_1 = int(input("Please enter first number : "))
+num_2 = int(input("Please enter second number : "))
+num_3 = int(input("Please enter third number : "))
+# Calculating average of input numbers
+avg = (num_1 + num_2 + num_3)/3
+# Displaying result using print statement
+print("The average of ", num_1, ",", num_2, ",", num_3, " is ", avg, sep="")
+
+Program 2)
+
+# Program to compute the income tax
+# Taking user input for parameters
+gross_income = int(input("Please enter gross income : "))
+dependents = int(input("Please enter number of dependents : "))
+# Calculating taxable income
+taxable_income = gross_income - 10000 - (3000 * dependents)
+# Calculating tax amount
+tax_amount = 0.2 * taxable_income
+# Displaying output using print
+print("Income tax amounts to ", "$", tax_amount, sep="")
+
+Program 3)
+
+# Program to write the number of seconds and minutes
+# Taking user input for number of seconds
+total_seconds = int(input("Please enter number of seconds : "))
+# Converting seconds to minutes and seconds
+minutes = total_seconds//60
+seconds = total_seconds%60
+# Displaying the output
+print(f"Duration of {total_seconds} is {minutes} mins and {seconds} secs")
+
+Program 4)
+
+# Program to add three numbers and convert to a string
+# Defining variables according to question
+a = 25
+b = "25"
+c = 25.0
+# Calculating sum using type casting
+sum = str(a + int(b) + int(c))
+# Printing the output string
+print(f"The final output is {sum}")
+
+Program 5)
+
+# Program to determine the sine and cosine in increments
+# Importing math modules for trigonometric functions
+import math
+# Defining loop for 15 deg increments
+for i in range(0, 346, 15):
+    sine = math.sin(math.radians(i))
+    cosine = math.cos(math.radians(i))
+    print(f"sin({i}) = {sine:.4f} and cos({i}) = {cosine:.4f}")
+
